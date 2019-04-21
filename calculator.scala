@@ -2,7 +2,8 @@ package cn.scala
 import util.control.Breaks._
 object calculator {
   def main(args: Array[String]): Unit = {
-    /**
+    /**要求：
+      * 输入：30+3*6-2 得到30+3*6-2 = 46
       * 思路：
       * 1.设计两个栈，数字栈，符号栈
       * 2.对exp进行扫描。一个一个取出
