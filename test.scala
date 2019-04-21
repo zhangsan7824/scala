@@ -2,14 +2,22 @@ package cn.scala
 import util.control.Breaks._
 object test {
   def main(args: Array[String]) {
+    val node4 = new HerNode(4,"d","04")
     val node1 = new HerNode(1,"a","01")
     val node2 = new HerNode(2,"b","02")
     val node3 = new HerNode(3,"c","03")
+
     val sing = new SingleLinkedList
+  /*  sing.add(node4)
     sing.add(node1)
     sing.add(node2)
-    sing.add(node3)
-    sing.list()
+    sing.add(node3)*/
+   sing.add2(node1)
+    sing.add2(node2)
+    sing.add2(node4)
+    sing.add2(node3)
+
+    sing.list
   }
 }
 
