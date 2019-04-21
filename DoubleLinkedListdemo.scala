@@ -17,7 +17,7 @@ object DoubleLinkedList {
      sing.list()
      val node5 = new HerNode2(3,"卢俊义","玉麒麟")
         sing.update(node5)
-     println("====================================")
+     println("==================================")
      sing.list()
 
 
