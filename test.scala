@@ -22,7 +22,7 @@ object test {
     sing.update(node5)
     println("=============================================")
     sing.list
-    println("===================================")
+    println("=================================")
     println(sing.del(1))
     println(sing.del(3))
     println(sing.del(4))
