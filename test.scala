@@ -13,7 +13,7 @@ object test {
   }
 }
 
-//定义单向列表
+//定义单向列表，链表的无序插入
 class SingleLinkedList {
   //初始化头结点，头结点一般不动
    val head = new HerNode(0,"","")
@@ -29,6 +29,32 @@ class SingleLinkedList {
       }
     }
      temp.next = herNode
+  }
+  //链表的有序插入
+  def add2(herNode: HerNode):Unit= {
+    var temp = head
+    var flag = false //判断编号是否存在，默认不存在
+    breakable {
+      while (true) {
+        if (temp.next == null) { //说明temp已经到了链表最后
+          break()
+        }
+        if (temp.next.no < herNode.no) { //位置找到,当前节点加入到temp后
+          break()
+
+        } else if (temp.next.no == herNode.no) {
+          flag = true
+          break()
+        }
+        temp = temp.next
+      }
+    }
+    if (flag){
+      printf("插入对象已经存在",herNode.no)
+    }else{
+      herNode.next  = temp.next
+      temp.next = herNode
+    }
   }
   //遍历单向列表
   def list():Unit = {
