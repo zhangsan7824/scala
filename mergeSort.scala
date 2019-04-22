@@ -2,7 +2,13 @@ package cn.scala
 
 import java.text.SimpleDateFormat
 import java.util.Date
+/**  归并排序
+*排序前
+*排序前时间=2019-04-22 20:37:21
+*快排后
+*排序后时间=2019-04-22 20:37:37
 
+*/
 object mergeSort {
   def main(args: Array[String]): Unit = {
     //val array = Array(101,1,22,10,-2,0)
