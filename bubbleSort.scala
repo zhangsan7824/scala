@@ -11,7 +11,7 @@ object bubbleSort {
   def main(args: Array[String]): Unit = {
     val random = new util.Random()
     val array = new Array[Int](80000)
-    for(i <- 0 until 8){   //循环生成随机数
+    for(i <- 0 until 80000){   //循环生成随机数
       array(i) = random.nextInt(8000000)
     }
     println("排序前")
