@@ -1,7 +1,7 @@
 package cn.scala
 
 object diguidemo {
-  def main(args: Array[String]): Unit = {
+  def main(args: Array[String]){
     test(4)
 
   }
