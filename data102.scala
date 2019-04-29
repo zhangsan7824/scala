@@ -13,6 +13,14 @@ object data102 {
     val unit = builder.command()
     println(s"unit = ${unit}")
 
+  //Java 的 List 转 scala 的 Buffer
+
+    import scala.collection.JavaConversions.asScalaBuffer
+    import scala.collection.mutable
+    val scalaArr: mutable.Buffer[String] = buffer
+    scalaArr.append("jack")
+    println(scalaArr)
+    
 
 
   }
